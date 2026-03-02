@@ -1,0 +1,23 @@
+name: draft_predictor
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - tqdm          
+  - scikit-learn     
+  - pytorch         
+  - torchvision      
+  - pytorch-cuda=12.1 # Matches modern drivers for your 1660Ti
+  - pip
+  - pip:
+      - datasets     # This is the Hugging Face library
+      - huggingface_hub
+      - seaborn
+      - wandb        
